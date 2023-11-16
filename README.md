@@ -1,129 +1,117 @@
-# 声明
+# MiniBlink49
+My fork of favorite MiniBlink49 project. I have my _failed_ own MediaExplorer one based on it. 
+It's my attempt #2 to explore this huuuge, mystic chrome-based browser engine :)
 
-由于本项目被黑产拿去修改源码后用于非法目的，导致我被人找上门了几次，
+## About
+A lighter and faster blink browser core for integrating the HTML interface into your application. Compact and lightweight browser core to replace wke and libcef
 
-经深思熟虑后决定自2019-6-17起不在更新，
+## Note / statement
+Since this project was hacked and used for illegal purposes after changing the source code, I was contacted several times.... After careful consideration, it was decided not to update from 2019-6-17. However, subsequent updates will be released in binary format and in header files, keep this in mind.
 
-不过后续更新会以二进制及头文件方式发布，请持续关注。
+The download address of the binary file and header file: https://github.com/weolar/miniblink49/releases
 
-二进制及头文件下载地址：https://github.com/weolar/miniblink49/releases
+I hope everyone respects the open source code and the work of the author, who has continued to be updated over the past few years.
 
-希望大家尊重开源，尊重作者全职几年持续更新付出的劳动。
+For additional support, please use the following contact information：
 
-**且用且珍惜**
+Developer Forum: https://bbs.miniblink.com/
 
-如需获得后续支持，请使用以下联系方式：
+(After registration, you need to add my QQ to let me know before I can confirm it)
 
-开发者论坛：https://bbs.miniblink.com/ （注册后，需要加我QQ告诉我，我才能验证通过）
+Add a WeChat group: wx_group
 
-加微信群：![wx_group](https://miniblink.net/images/wx_group.png)
+Telegram Group:https://t.me/miniblink
 
-Telegram群：https://t.me/miniblink
+Question group: 738349226 (can be added), 94093808 (do not add when it is full)
 
-Q群：738349226（可加）、94093808（已满勿加）
+QQ (weolar): 93527630
 
-QQ（weolar）：93527630
+Email:weolar@miniblink.net
 
-email：weolar@miniblink.net
+WeChat: You can send an email to familiarize yourself with my WeChat ID. It is currently not on github
 
-微信：可发邮箱咨询我微信号。暂时不放到github了
+## Introduction Abstract
+miniblink is a small open source browser widget consisting of a single file, based on chromium.
 
+Using the C interface, you can create a browser using just a few lines of code.
 
-# 简介 Abstract
+More information at http://miniblink.net
 
-miniblink is a open source, one file, small browser widget base on chromium.
+Miniblink is an open source single-file application, currently known as the smallest chromium-based browser control.
 
-By using C interface, you can create a browser just some line code.
+Thanks to the exported pure C interface, you can create a browser control with a few lines of code.
 
-more information at http://miniblink.net
+You can get more information about miniblink on the official website <url>.
 
-----
-
-miniblink是一个开源的、单文件、且目前已知的最小的基于chromium的，浏览器控件。
-
-通过其导出的纯C接口，几行代码即可创建一个浏览器控件。
-
-您可以通过官网http://miniblink.net 来获取更多的关于miniblink的信息。
-
-
-----
-
-# 特性 Features
-
-- 极致小巧的体积 (small size)
-- C++，C#，Delphi等语言调用 (support C++，C#，Delphi language to call)
-- 内嵌Nodejs，支持electron (with Nodejs, can run electron)
-- 随心所欲的定制功能、模拟环境 (simulate other browser environment)
-- 支持Windows xp、npapi (support windows xp and npapi)
-- 完善的HTML5支持，对各种前端库友好 (support HTML5, and friendly to front framework)
-- 关闭跨域开关后，可以使用各种跨域功能 (support cross domain)
-- 网络资源拦截，替换任意网站任意js为本地文件 (network intercept, you can replace any resource to local file)
-- headless模式，极大节省资源，适用于爬虫 (headless mode, be suitable for Web Crawler)
-
-----
-
-# 文档 Document
-
-关于miniblink的介绍见这篇文章：https://zhuanlan.zhihu.com/p/22611497?group_id=764036386641707008
-
-API文档见：https://miniblink.net/views/doc/index.html 
-
-----
-
-# 使用 Usage
-请前往https://github.com/weolar/miniblink49/releases 下载最新编译后的SDK，里面的demo_src是个完整的用例。
-
-或者前往 https://github.com/weolar/mb-demo 下载
-
-最简单的创建一个窗口：
-
-**Usage**
-
-```cpp
-// 无边框窗体 borderless window
-wkeWebView window = wkeCreateWebWindow(WKE_WINDOW_TYPE_TRANSPARENT, NULL, 0, 0, 640, 480);  
-wkeLoadURLW(window, L"miniblink.net");
-```
-![demo-1](https://weolar.github.io/miniblink/assets/images/demo-0.gif)
-
-# 编译 Build
-
-不推荐自己编译。请前往https://github.com/weolar/miniblink49/releases 下载编译好的文件使用。
-
-因为每天有大量更新，我无法确保每次更新都能保证编译通过。如果有编译错误，请不要来提问，耐心等待我的下次提交。
-
-----
-
-# mini-electron
-
-mini-electron项目是一个基于miniblink的独立项目，旨在创建一个更小的electron运行环境。目前已经实现了这一目标。
-
-通过替换mini-electron，打包完后的文件仅仅6m左右。
-
-----
-
-# 联系方式
-
-大家有问题可以选择：
-
-- 加微信群：![wx_group](https://miniblink.net/images/wx_group.png)
-
-- 邮箱weolar@miniblink.net
-
-- github里留言issue讨论
-
-- 加Q群94093808
-
-- 关注知乎专栏：https://zhuanlan.zhihu.com/chrome
-
-----
-
-# 致谢 Thanks
-
-特别感谢网友zero，他是miniblink的代码的重要贡献者。
-
-感谢网友core，感谢网友“大清知府”。
-
-感谢网友boxue（ https://www.zhihu.com/people/coltor/ ），他致力于对miniblink架构的研究及推广。
+## Features
+- Extremely compact size (small size)
+- Calls in C++, C#, Delphi and other languages (support for calls in C++, C#, Delphi)
+- Built-in Nodejs that supports electron (you can run electron with Nodejs)
+- Customize the features and simulate the environment the way you want (simulate a different browser environment)
+- Windows XP and NPAPI support (Windows XP and NPAPI support)
+- Perfect HTML5 support, friendly to various interface libraries (HTML5 support and front framework friendly)
+- After disabling the cross-domain switch, you can use various cross-domain functions (cross-domain access support).
+- Interception of a network resource, replace any js of any website as a local file (network interception, you can replace any resource with a local file)
+- Headless mode, which significantly saves resources, suitable for web scanners (headless mode, suitable for web scanners)
 
 
+## Documentation
+- For familiarization with miniblink, see this article: https://zhuanlan.zhihu.com/p/22611497?group_id=764036386641707008
+
+- For API documentation, see: https://miniblink.net/views/doc/index.html
+
+- SDK
+
+Please follow the link to download the latest version of the compiled SDK.
+
+The demo_src in it is a complete usage example.
+
+Or follow the link https://github.com/weolar/mb-demo download
+
+## Usage
+The easiest way to create a window is：
+// Form without margins window without margins
+Window wkeWebView = wkeCreateWebWindow(WKE_WINDOW_TYPE_TRANSPARENT, NULL, 0, 0, 640, 480);
+wkeLoadURLW(window, L"miniblink.net ");
+
+
+## Compilation
+It is not recommended to compile by yourself. Please follow the link <url> to download the compiled file and use it.
+
+Since there are a large number of updates every day, I cannot guarantee that every update will guarantee that the compilation will be successful. If a compilation error has occurred, please do not ask questions and wait patiently for my next submission.
+
+## Mini-electron
+The mini-electron project is an independent project based on miniblink, which aims to create a smaller electron operating environment. At the moment, this goal has been achieved.
+
+When replacing the mini-electron, the size of the packed file is only about 6 MB.
+
+## Contact information
+If you have any questions, you can choose：
+
+Add a WeChat group: wx_group
+
+Email address: weolar@miniblink.net
+
+Leave a message on github to discuss the issue
+
+Add Group Q 94093808
+
+Follow the Zhihu column:https:/сможем make, with to lu of, zhuanlan.zhihu.com/chrome
+
+## Thank you
+Special thanks to the user of the zero network, who made an important contribution to the development of the pal corp of the exemplary code.
+
+Thank you, netizens, for their support, and thank you, netizens, for the "prefect of the Qing Dynasty.”
+
+Thanks to the boxue network user ( https://www.zhihu.com/people/coltor /), there remains the opportunity to engage in research and promotion of the miniblink architecture.
+
+## Reference(s)
+- https://github.com/weolar/miniblink49/
+- https://github.com/Alberl-Lee/miniblink49-VS2022/
+- https://github.com/lzpong/miniblink49/
+
+## ..
+As is. No support. RnD only. DIY!
+
+## .
+[m][e] 2023
